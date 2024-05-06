@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.navbar {
+  top: 0;
+}
+.nav-item {
+  margin-left: 37px;
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    transition: 0.3s all ease-in-out;
+  }
+  &:hover .nav-link {
+    color: #4dc2e6;
+  }
+}
+.main_banner {
+  height: 650px;
+  margin-top: 83px;
+  position: relative;
+  & > img {
+    height: 650px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .layer {
+    background: linear-gradient(90deg, #000, #0006 40%, #0000);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .text_layer {
+    position: absolute;
+    width: 100%;
+    .property_banner_container {
+      height: 100%;
+      position: relative;
+      .project_details {
+        bottom: 110px;
+        position: absolute;
+        .name {
+          font-size: 50px;
+          color: #fff;
+        }
+        .location {
+          font-size: 24px;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+        .call_now_btn {
+          color: #fff;
+          border: 1px solid #fff;
+          background-color: transparent;
+          border-radius: 8px;
+          text-decoration: none;
+          padding: 12px 40px;
+          transition: 0.3s all ease-in-out;
+          font-weight: 500;
+          &:hover {
+            background-color: #4dc2e6;
+            border: 1px solid #4dc2e6;
+            color: #222;
+          }
+        }
+        ul {
+          list-style-type: none;
+          margin-bottom: 30px;
+          li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            position: relative;
+            color: #fff;
+            font-size: 19px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            &::before {
+              background-image: url("./assets/approved.svg");
+              background-size: cover;
+              content: "";
+              display: block;
+              height: 20px;
+              left: -32px;
+              margin-right: 10px;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
