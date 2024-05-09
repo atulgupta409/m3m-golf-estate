@@ -354,3 +354,85 @@ a {
   height: 474px;
   border-radius: 20px;
 }
+footer {
+  .main_footer {
+    background-image: linear-gradient(to right, #846cad, #56bcea);
+    padding-top: 78px;
+    padding-bottom: 50px;
+  }
+  .about_estate > div {
+    height: 130px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  .footer_title {
+    margin-bottom: 25px;
+    margin-top: 4px;
+    h3 {
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      border-bottom: 1px solid #2c3236;
+      padding-bottom: 16px;
+      font-size: 18px;
+      &::before {
+        content: "";
+        width: 50px;
+        height: 1px;
+        background: #4dc2e6;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+      }
+    }
+  }
+  .useful_link ul {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 0;
+    li {
+      line-height: 40px;
+      list-style-type: none;
+      a {
+        font-weight: normal;
+        color: #fff;
+        display: inline;
+        i {
+          font-size: 18px;
+          vertical-align: middle;
+          padding-right: 6px;
+        }
+        .fa-angle-right::before {
+          content: "\f105";
+        }
+      }
+      i {
+        font-size: 18px;
+        vertical-align: middle;
+        padding-right: 6px;
+        color: #fff;
+      }
+      .fa-angle-right::before {
+        content: "\f105";
+      }
+    }
+  }
+  .bottom_footer {
+    background-color: #1c252c;
+    .container {
+      border-top: 1px solid #2c3236;
+      padding: 21px 0 11px 0;
+    }
+    .text {
+      p {
+        letter-spacing: 0.25px;
+        color: #fff;
+        text-align: center;
+        a {
+          color: #a0a0a0;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

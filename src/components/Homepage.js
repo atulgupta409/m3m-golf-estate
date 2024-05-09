@@ -10,6 +10,7 @@ import WhyGolfEstate from "./WhyGolfEstate";
 import Contact from "./Contact";
 import Partners from "./Partners";
 import Location from "./Location";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
@@ -25,6 +26,7 @@ const Homepage = () => {
       <Contact />
       <Partners />
       <Location />
+      <Footer />
     </div>
   );
 };
