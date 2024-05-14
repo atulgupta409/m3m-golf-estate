@@ -47,41 +47,53 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/fairway-west-floor-plan.php"
+                  >
                     Fairway West
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/fairway-east-floor-plan.php"
+                  >
                     Fairway East
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link
+                    className="dropdown-item"
+                    to="/st-andrews-floor-plan.php"
+                  >
                     St. Andrews
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Polo Suites
-                  </a>
+                  <Link
+                    className="dropdown-item"
+                    to="/polo-suits-floor-plan.php"
+                  >
+                    Polo Suits
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/m3m-golf-estate-location.php">
                 Location Map
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/m3m-golf-estate-master-plan.php">
                 Master Plan
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/about-us.php">
                 Overview
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

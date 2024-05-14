@@ -1,8 +1,9 @@
 import React from "react";
 import ImageCarousal from "./ImageCarousal";
 import useGetData from "../utils/useGetData";
-import { FaUserTie } from "react-icons/fa";
+import { FaUserTie, FaSolarPanel } from "react-icons/fa";
 import { RiUserLocationFill } from "react-icons/ri";
+import { PiLightbulbFilamentBold } from "react-icons/pi";
 
 const About = () => {
   const data = useGetData();
@@ -38,14 +39,14 @@ const About = () => {
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-center mt-5">
-              <div className="icon"></div>
+              <PiLightbulbFilamentBold className="icons" />
               <div className="about_features">
                 <h4>UNMATCHED AMENITIES</h4>
                 <p>Clubhouse featuring state of art facilities.</p>
               </div>
             </div>
             <div className="col-md-6 d-flex align-items-center mt-5">
-              <div className="icon"></div>
+              <FaSolarPanel className="icons" />
               <div className="about_features">
                 <h4>LIFESTYLE ELEMENTS</h4>
                 <p>

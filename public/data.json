@@ -1,6 +1,324 @@
 [
   {
     "name": "M3M Golf Estate",
-    "about": "M3M Golf Estate is strategically located on high growth corridor of Golf Course Extension Road, Sector 65, Gurgaon, it spreads over a sprawling over 50 acres. All apartments offer a breath taking view of a 9-hole executive golf course, designed by globally acclaimed Golf plan, USA. ‘M3M Golf Estate’ is the largest luxury condominium project in Gurgaon. Designed by Arcop International, Montreal Canada, the project will surely change the way luxury is created and lived. With high end specifications and amenities comparable to finest 7-star resorts, the project attracts like-minded business community. Flats at Golf Estate are spacious with huge open balconies. Every apartment here overlooks the majestic golf course. Yes, it is true. The place offers 9 hole executive golf course. It also has eco-friendly landscape design and a world class club house. It is for all the above mentioned reasons that M3M’s Golf Estate has emerged as one of the top choices for all those who prefer plush accommodation that can match with any other around the world."
+    "starting_price": "3000 / sq.ft",
+    "floor_plans": [
+      {
+        "category": "Fairway West",
+        "slug": "fairway-west-floor-plan.php",
+        "plans": [
+          {
+            "size": "3986 Sq.ft",
+            "name": "3BHK Duplex",
+            "img": "/floor-plan/MGE TW 14 a-3BHK-Duplex Lower-3986.jpg",
+            "tower": "14"
+          },
+          {
+            "size": "3986 Sq.ft",
+            "name": "3BHK Duplex Lower",
+            "img": "/floor-plan/MGE TW 14 a-3BHK-Duplex Lower-3986 (1).jpg",
+            "tower": "14"
+          },
+          {
+            "size": "4581 Sq.ft",
+            "name": "4BHK Duplex Lower",
+            "img": "/floor-plan/MGE TW 14 c-4BHK-Duplex Lower-4581.jpg",
+            "tower": "14"
+          },
+          {
+            "size": "3986 Sq.ft",
+            "name": "4BHK Duplex Upper",
+            "img": "/floor-plan/MGE TW 14 c-4BHK-Duplex Upper-4581.jpg",
+            "tower": "14"
+          },
+          {
+            "size": "5583 Sq.ft",
+            "name": "5BHK Duplex Lower",
+            "img": "/floor-plan/MGE 5BHK Duplex Lower T11.jpg",
+            "tower": "11"
+          },
+          {
+            "size": "5583 Sq.ft",
+            "name": "5BHK Duplex Upper",
+            "img": "/floor-plan/MGE 5BHK Duplex Lower T11 (1).jpg",
+            "tower": "11"
+          },
+          {
+            "size": "5583 Sq.ft",
+            "name": "5BHK Duplex Upper",
+            "img": "/floor-plan/MGE TW 09b-3BHK-3452.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "3469 Sq.ft",
+            "name": "3BHK + Den",
+            "img": "/floor-plan/MGE TW 09-a-3BHK-3469.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "3709 Sq.ft (Panaroma Suit)",
+            "name": "3BHK + Puja + Puja",
+            "img": "/floor-plan/Panorama2_Unit-A_Level-01-06_3BHK+Den+Stuty+Puja_3709 sft.jpg",
+            "tower": "9"
+          }
+        ]
+      },
+      {
+        "category": "Fairway East",
+        "slug": "fairway-east-floor-plan.php",
+        "plans": [
+          {
+            "size": "3843 Sq.ft",
+            "name": "3BHK + Den",
+            "img": "/floor-plan/east1.jpg",
+            "tower": "1/4/5"
+          },
+          {
+            "size": "5219 Sq.ft",
+            "name": "4BHK + Den + Lounge + Puja",
+            "img": "/floor-plan/4BHK+Den+Lounge+Puja+Tower2-3+5219Sqft.png",
+            "tower": "2/3"
+          },
+          {
+            "size": "4992 Sq.ft",
+            "name": "4BHK + Den + Puja",
+            "img": "/floor-plan/east7.jpg",
+            "tower": "7"
+          }
+        ]
+      },
+      {
+        "category": "St. Andrews",
+        "slug": "st-andrews-floor-plan.php",
+        "plans": [
+          {
+            "size": "4992 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "1st to 14",
+            "img": "/floor-plan/st-andrews-6450sqft-2.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6371 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "15, 17 & 19",
+            "img": "/floor-plan/st-andrews-6371sqft.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6450 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "3, 6, 8, 11 & 12",
+            "img": "/floor-plan/st-andrews-6171sqft.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6450 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "16, 18 & 20",
+            "img": "/floor-plan/st-andrews-6450sqft.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6335 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "21, 23, 25, 27, 29 & 31",
+            "img": "/floor-plan/st-andrews-6335-2sqft.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6335 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "22, 24, 26, 28, 30 & 32",
+            "img": "/floor-plan/st-andrews-6335sqft.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6265 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "1, 2, 4, 5 & 7",
+            "img": "/floor-plan/st-andrews-6265sqft.jpg",
+            "tower": "9"
+          },
+          {
+            "size": "6351 Sq.ft",
+            "name": "5BHK + Den + Puja",
+            "floor": "9, 10 & 14",
+            "img": "/floor-plan/st-andrews-6351sqft.jpg",
+            "tower": "9"
+          }
+        ]
+      },
+      {
+        "category": "Polo Suits",
+        "slug": "polo-suits-floor-plan.php",
+        "plans": [
+          {
+            "size": "3980 Sq.ft",
+            "name": "4BHK + Den + Puja",
+            "img": "/floor-plan/polosuits-1.jpg"
+          },
+          {
+            "size": "4968 Sq.ft",
+            "name": "4BHK + Den + Puja",
+            "img": "/floor-plan/polosuits-2.jpg"
+          }
+        ]
+      }
+    ],
+    "about": "M3M Golf Estate is strategically located on high growth corridor of Golf Course Extension Road, Sector 65, Gurgaon, it spreads over a sprawling over 50 acres. All apartments offer a breath taking view of a 9-hole executive golf course, designed by globally acclaimed Golf plan, USA. ‘M3M Golf Estate’ is the largest luxury condominium project in Gurgaon. Designed by Arcop International, Montreal Canada, the project will surely change the way luxury is created and lived. With high end specifications and amenities comparable to finest 7-star resorts, the project attracts like-minded business community. Flats at Golf Estate are spacious with huge open balconies. Every apartment here overlooks the majestic golf course. Yes, it is true. The place offers 9 hole executive golf course. It also has eco-friendly landscape design and a world class club house. It is for all the above mentioned reasons that M3M’s Golf Estate has emerged as one of the top choices for all those who prefer plush accommodation that can match with any other around the world.",
+    "locationAdvantages": [
+      "Prime Location: Prominently located on Southern Peripheral Road (Golf Course Extension Road), one of the widest roads in Gurgaon (90 mtrs), recently announced as NH 236",
+      "Just 30 minutes drive from Delhi International Airport, 10 minutes driving distance from major retail developments, schools, colleges and hospitals, 15 minutes drive to Medanta Medicity, Fortis & Max Hospital, widely acknowledged amongst the Best Medical Facilities in Delhi-NCR.",
+      "Located in sector 65 on Golf Course Extennsion Road parallel to The Proposed Metro Corridor in Gurgaon.",
+      "Prominent schools like Heritage, Scottish High, Pathways, G.D. Goenka, Shriram are in close proximity.",
+      "Located near reputed hospitals like Max, Artemis, Medicity and Fortis. World class Golf club house besides the community clubs."
+    ],
+    "price": [
+      {
+        "id": 1,
+        "apartment": "Fairway West",
+        "Type": "4 BHK + Den + Gym",
+        "Tower": 1,
+        "Size": "5000",
+        "price": "call for price"
+      },
+      {
+        "id": 2,
+        "apartment": "Panorma Suits",
+        "Type": "3BHK + Den",
+        "Tower": "2,3,4",
+        "Size": "3840",
+        "price": "call for price"
+      },
+      {
+        "id": 3,
+        "apartment": "Fairway West",
+        "Type": "3BHK + Den",
+        "Tower": "9",
+        "Size": "3150",
+        "price": "call for price"
+      },
+      {
+        "id": 4,
+        "apartment": "Fairway West",
+        "Type": "3BHK + Den + Big Balcony",
+        "Tower": "9",
+        "Size": "3510",
+        "price": "call for price"
+      },
+      {
+        "id": 5,
+        "apartment": "Fairway West",
+        "Type": "3BHK + Powder",
+        "Tower": "19,20",
+        "Size": "3000",
+        "price": "call for price"
+      },
+      {
+        "id": 6,
+        "apartment": "Duplex 3 BHK",
+        "Type": "3 BHK Duplex",
+        "Tower": "11, B unit",
+        "Size": "3836",
+        "price": "call for price"
+      },
+      {
+        "id": 7,
+        "apartment": "Duplex 4 BHK",
+        "Type": "4 BHK Duplex",
+        "Tower": "11, C unit",
+        "Size": "4581",
+        "price": "call for price"
+      },
+      {
+        "id": 8,
+        "apartment": "Duplex 5 BHK",
+        "Type": "5 BHK Duplex + Den",
+        "Tower": "11, A unit",
+        "Size": "5583",
+        "price": "call for price"
+      },
+      {
+        "id": 9,
+        "apartment": "Fairway East",
+        "Type": "3BHK + Den",
+        "Tower": "1,4 & 5",
+        "Size": "3843",
+        "price": "call for price"
+      },
+      {
+        "id": 10,
+        "apartment": "Fairway East",
+        "Type": "4 BHK + Den + Lounge + Puja",
+        "Tower": "2 & 3",
+        "Size": "5218",
+        "price": "call for price"
+      },
+      {
+        "id": 11,
+        "apartment": "Fairway East",
+        "Type": "4 BHK + Den + Puja",
+        "Tower": "7",
+        "Size": "4992",
+        "price": "call for price"
+      },
+      {
+        "id": 12,
+        "apartment": "St. Andrews (T6)",
+        "Type": "5BHK + Den + Puja",
+        "Tower": "Floor 1 to 14",
+        "Size": "4992",
+        "price": "call for price"
+      },
+      {
+        "id": 13,
+        "apartment": "St. Andrews (T6)",
+        "Type": "5BHK + Den + Puja",
+        "Tower": "Floor 3,6,8,11 & 12",
+        "Size": "6450",
+        "price": "call for price"
+      },
+      {
+        "id": 14,
+        "apartment": "St. Andrews (T6)",
+        "Type": "5BHK + Den + Puja",
+        "Tower": "Floor 15, 17 & 19",
+        "Size": "6371",
+        "price": "call for price"
+      },
+      {
+        "id": 15,
+        "apartment": "St. Andrews (T6)",
+        "Type": "5BHK + Den + Puja",
+        "Tower": "Floor 16, 18 & 20",
+        "Size": "6450",
+        "price": "call for price"
+      },
+      {
+        "id": 16,
+        "apartment": "St. Andrews (T6)",
+        "Type": "5BHK + Den + Puja",
+        "Tower": "Floor 21 to 32",
+        "Size": "6335",
+        "price": "call for price"
+      },
+      {
+        "id": 17,
+        "apartment": "Polo Suits",
+        "Type": "3 BHK + Den + Puja",
+        "Tower": "PS - 01,02,03,04",
+        "Size": "3980",
+        "price": "call for price"
+      },
+      {
+        "id": 18,
+        "apartment": "Polo Suits",
+        "Type": "4 BHK + Den + Puja",
+        "Tower": "PS - 01,02,03,04",
+        "Size": "4968",
+        "price": "call for price"
+      }
+    ]
   }
 ]

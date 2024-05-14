@@ -240,11 +240,10 @@ code {
   }
   table {
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px 0px;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 30px;
-    background-color: transparent;
   }
 }
 .reason-box {
@@ -354,6 +353,9 @@ a {
   height: 474px;
   border-radius: 20px;
 }
+.floor-plan-box {
+  background-image: linear-gradient(to right, #01beeb, #01c0a2, #59c747);
+}
 footer {
   .main_footer {
     background-image: linear-gradient(to right, #846cad, #56bcea);
@@ -431,6 +433,161 @@ footer {
         a {
           color: #a0a0a0;
           font-weight: normal;
+        }
+      }
+    }
+  }
+}
+.inner_banner {
+  background: url("./assets/inner-banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 240px;
+  position: relative;
+  margin-top: 85px;
+  .overlay {
+    height: 100%;
+    text-align: center;
+    padding: 74px 0 25px 0;
+    h4 {
+      color: #fff;
+      font-size: 36px;
+      position: relative;
+      text-transform: uppercase;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.review_and_blog {
+  background: #f7f7f7;
+  padding-top: 30px;
+  padding-bottom: 65px;
+  margin-bottom: 20px;
+}
+.map_loc {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main_title2 {
+  line-height: 34px;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #252525;
+  font-size: 25px;
+  span {
+    background: linear-gradient(to right, #846cad, #56bcea);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: #e4e4e4;
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+  }
+}
+.other-floor-plan {
+  padding: 50px 0px;
+  .other-floor-box {
+    margin: 0px 10px;
+    .floor-box-link {
+      background-color: #f7f7f7;
+      padding: 10px;
+      box-shadow: 3px 3px 10px #ccc;
+      .floor-box-detail {
+        background-image: linear-gradient(to right, #846cad, #56bcea);
+        h4 {
+          color: #fff;
+          padding: 25px 0px;
+          line-height: 30px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+.about_real_estate {
+  .row {
+    margin-top: 50px;
+  }
+}
+.property_details_tab.property_details_tab2 {
+  height: auto;
+  background-image: none;
+  .overlay {
+    padding-top: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 90px;
+    .img_box img {
+      height: 465px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .tab_nav_holder {
+    background: #fff;
+    padding: 0;
+    ul {
+      padding: 0;
+      list-style-type: none;
+      background-color: #f7f7f7;
+      li {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: #00bde0;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          color: gray;
+          .vip_icon {
+            width: 91px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 53px;
+            border-right: 1px solid #cdcbcb;
+            margin-right: 22px;
+            .f30 {
+              font-size: 30px;
+            }
+          }
+          > div {
+            padding: 20px 10px;
+          }
+          div {
+            h6 {
+              font-size: 17px;
+              text-transform: uppercase;
+            }
+            p {
+              font-size: 14px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .active {
+        background: #4dc2e6;
+        a {
+          border-bottom: none;
+          color: #fff;
         }
       }
     }

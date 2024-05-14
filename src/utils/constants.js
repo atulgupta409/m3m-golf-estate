@@ -5,9 +5,11 @@ import image2 from "../assets/m3m-golfestate2.webp";
 import image3 from "../assets/m3m-golfestate3.webp";
 import image4 from "../assets/m3m-golfestate4.webp";
 import image5 from "../assets/m3m-golfestate5.webp";
+import floorBanner from "../assets/inner-banner.jpg";
 
 export const BRAND_LOGO = logo;
 export const MAIN_BANNER = mainBanner;
+const FLOOR_PAGE_BANNER = floorBanner;
 
 export const IMAGES = [
   {

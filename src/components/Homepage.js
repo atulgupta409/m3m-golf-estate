@@ -6,7 +6,6 @@ import FloorPlans from "./FloorPlans";
 import VideoSection from "./VideoSection";
 import VipClub from "./VipClub";
 import PriceTable from "./PriceTable";
-import WhyGolfEstate from "./WhyGolfEstate";
 import Contact from "./Contact";
 import Partners from "./Partners";
 import Location from "./Location";
@@ -22,7 +21,6 @@ const Homepage = () => {
       <VideoSection />
       <VipClub />
       <PriceTable />
-      <WhyGolfEstate />
       <Contact />
       <Partners />
       <Location />
