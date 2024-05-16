@@ -9,22 +9,24 @@ const Footer = () => {
       <div className="main_footer">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-3">
               <div className="about_estate">
                 <Link to={"/"}>
                   <img src={BRAND_LOGO} alt="logo" />
                 </Link>
-                <FacebookProvider appId="YOUR_APP_ID">
-                  <Page
-                    href="https://www.facebook.com/GOLFESTATEM3M/?modal=admin_todo_tour"
-                    tabs="timeline"
-                    width="340"
-                    height="500"
-                  />
-                </FacebookProvider>
+                <div className="mob_hide">
+                  <FacebookProvider appId="YOUR_APP_ID">
+                    <Page
+                      href="https://www.facebook.com/GOLFESTATEM3M/?modal=admin_todo_tour"
+                      tabs="timeline"
+                      width="340"
+                      height="500"
+                    />
+                  </FacebookProvider>
+                </div>
               </div>
             </div>
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-3 mob_hide">
               <div className="useful_link">
                 <div className="footer_title">
                   <h3>M3M Golf Estate</h3>
@@ -63,7 +65,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-3 mob_hide">
               <div className="useful_link">
                 <div className="footer_title">
                   <h3>M3M Projects</h3>
@@ -102,7 +104,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-6">
+            <div className="col-lg-3">
               <div className="useful_link">
                 <div className="footer_title">
                   <h3>Contact Info</h3>

@@ -4,11 +4,22 @@ import Footer from "./Footer";
 import ImageCarousal from "./ImageCarousal";
 import useGetData from "../utils/useGetData";
 import locationMap from "../assets/location-map-m3m-golf-estate.jpg";
+import { Helmet } from "react-helmet-async";
 
 const LocationMap = () => {
   const data = useGetData();
+  const currentUrl = window.location.href;
   return (
     <>
+      <Helmet>
+        <title>M3M Golf Estate Location | Golf Estate Sector 65 Gurgaon</title>
+        <meta
+          name="description"
+          content="m3m golf estate located at sector 65 golf course extn road gurgaon,
+          well connected to nh8, golf course road and airport."
+        />
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
       <Navbar />
       <section className="inner_banner">
         <div className="overlay">

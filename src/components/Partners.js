@@ -6,7 +6,7 @@ import equipment from "../assets/miele-kitchens.png";
 
 const Partners = () => {
   return (
-    <div className="some_facts">
+    <div className="some_facts mob_hide">
       <div className="overlay">
         <div className="container">
           <div className="facts_wrapper text-center row">

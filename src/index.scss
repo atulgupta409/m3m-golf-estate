@@ -593,3 +593,206 @@ a {
     }
   }
 }
+.desk_hide {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mob_hide {
+    display: none !important;
+  }
+  .main_container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main_title {
+    line-height: 26px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .overflow_row {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .overflow_row::-webkit-scrollbar {
+    display: none;
+  }
+  #myVideo {
+    height: 200px;
+  }
+  .main_title2 {
+    line-height: 21px;
+    font-size: 19px;
+  }
+  .floor-title h5 {
+    line-height: 27px;
+    font-size: 21px;
+    padding: 34px 0px;
+  }
+  .property_details_tab.property_details_tab2 {
+    .overlay {
+      margin-bottom: 53px;
+      .img_box img {
+        height: 200px;
+      }
+    }
+    .tab_nav_holder ul {
+      display: flex;
+      overflow-x: scroll;
+      li {
+        border-right: 1px solid #cdc9c9;
+        a > div {
+          min-width: 174px;
+          h6 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .main_banner {
+    height: 387px;
+    margin-top: 71px;
+    > img {
+      height: 387px;
+    }
+    .text_layer .property_banner_container .project_details {
+      bottom: 47px;
+      .name {
+        font-size: 28px;
+      }
+      .location {
+        font-size: 17px;
+      }
+      ul {
+        padding-left: 22px;
+        li {
+          font-size: 14px;
+          margin-bottom: 4px;
+          &::before {
+            height: 14px;
+            left: -23px;
+            margin-right: 0px;
+            width: 14px;
+          }
+        }
+      }
+      .call_now_btn {
+        padding: 6px 22px;
+        font-size: 14px;
+      }
+    }
+  }
+  .price-table {
+    padding: 30px 0;
+    h2 {
+      font-size: 19px;
+    }
+    table {
+      font-size: 12px;
+      margin-top: 18px;
+    }
+  }
+  .agent_info_wrapper {
+    width: 94%;
+    margin: auto;
+  }
+  .contact_agent_wrapper {
+    .info h6 {
+      margin-bottom: 0;
+    }
+    .agent_contact_form button {
+      line-height: 34px;
+    }
+    .name {
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      i {
+        margin-top: 0px;
+      }
+    }
+  }
+  footer {
+    .main_footer {
+      padding-top: 40px;
+      padding-bottom: 10px;
+      .about_estate {
+        background-color: #fff;
+        width: 150px;
+        img {
+          width: 139px;
+        }
+      }
+    }
+    .footer_title {
+      margin-bottom: 8px;
+      h3 {
+        padding-bottom: 8px;
+        font-size: 15px;
+        width: 35%;
+        margin-top: 10px;
+      }
+    }
+    ul li {
+      line-height: 23px;
+      font-size: 14px;
+      i {
+        font-size: 13px !important;
+      }
+    }
+    .bottom_footer .container {
+      padding: 12px 0 1px 0;
+    }
+  }
+  .leaflet-container {
+    height: 250px;
+  }
+  .navbar-brand img {
+    width: 139px;
+  }
+  .inner_banner .overlay h4 {
+    font-size: 25px;
+  }
+  .review_and_blog {
+    padding-top: 1px;
+  }
+  .map_loc {
+    padding-top: 40px;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  .about_real_estate {
+    ul {
+      width: 100% !important;
+      margin-top: 20px;
+      padding-left: 20px;
+      li {
+        text-align: justify;
+        font-size: 15px;
+      }
+    }
+  }
+  .about_estate .col-md-8 {
+    margin-top: 20px;
+    p {
+      width: 100% !important;
+      text-align: justify;
+    }
+  }
+  .mast img {
+    width: 100%;
+  }
+  .abouties .col-md-8 {
+    margin-top: 20px;
+    p {
+      width: 100% !important;
+      text-align: justify;
+    }
+  }
+}

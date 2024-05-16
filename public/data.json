@@ -319,6 +319,115 @@
         "Size": "4968",
         "price": "call for price"
       }
+    ],
+    "seo": [
+      {
+        "page": "home",
+        "title": "M3M Golf Estate Sector 67 Gurgaon | 2, 3, 4, and 5 BHK",
+        "description": "Buy 2, 3, 4, and 5 BHK luxury apartments in M3M Golf Estate Sector 67 Gurgaon. Get project prices, reviews, floor plans, and all the details on our website.",
+        "keywords": "m3m golf estate, m3m golf estate gurgaon, m3m golf estate sector 65 gurgaon, m3m golf estate rent",
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "M3M Golf Estate Sector 65 Gurgaon",
+            "url": "https://m3m-golfestate.in/",
+            "logo": "https://m3m-golfestate.in/images/home/logo.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "9999063322",
+              "contactType": "sales",
+              "contactOption": "TollFree",
+              "areaServed": "IN",
+              "availableLanguage": ["en", "Hindi"]
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://m3m-golfestate.in/"
+            },
+            "headline": "M3M Golf Estate Sector 65 Gurgaon | View Price, Floor Plan",
+            "description": "M3M Golf Estate is strategically located on high growth corridor of Golf Course Extension Road, Sector 65, Gurgaon, it spreads over a sprawling over 50 acres.",
+            "image": [
+              "https://guptapromoters.com/wp-content/uploads/2022/08/6-10.jpg",
+              "https://lh3.googleusercontent.com/proxy/9dLqlHaElaxVbWEek906kX4PVq84_XRTR2i8CY2AV3QtP22xNXef60p13WVp7ELofm0yRFy-XJqlF9sglNF4E2j_4eN_CDJWXlIeQffZFOC5HUCOZrnUVbzfUv9F",
+              "https://www.gurgaonapartments.in/admin/upload/projectgallery/1611225955_a18.jpg"
+            ],
+            "author": {
+              "@type": "Organization",
+              "name": "M3M Golf Estate",
+              "url": "https://m3m-golfestate.in/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "M3M Golf Estate",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://m3m-golfestate.in/images/home/logo.png"
+              }
+            },
+            "datePublished": "2024-04-03",
+            "dateModified": "2024-05-05"
+          },
+          {
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "M3M Golf Estate Sector 65 Gurgaon",
+            "image": "https://m3mlndia.com/wp-content/uploads/2022/08/m3m-golf-estate.jpeg",
+            "description": "M3M Golf Estate is strategically located on high growth corridor of Golf Course Extension Road, Sector 65, Gurgaon, it spreads over a sprawling over 50 acres.",
+            "brand": {
+              "@type": "Brand",
+              "name": "M3M Golf Estate"
+            },
+            "sku": "M3M Golf Estate Sector 65 Gurgaon",
+            "mpn": "M3M Golf Estate Sector 65 Gurgaon",
+            "offers": {
+              "@type": "AggregateOffer",
+              "url": "https://m3m-golfestate.in/",
+              "offerCount": "2"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "bestRating": "5",
+              "worstRating": "3",
+              "ratingCount": "2600",
+              "reviewCount": "1200"
+            },
+            "review": {
+              "@type": "Review",
+              "name": "Raman Gupta",
+              "reviewBody": "I recently purchased an apartment in M3M Golf Estate, and my experience has been amazing. Living here has allowed me to embark on a new journey filled with comfort and convenience.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.8",
+                "bestRating": "5",
+                "worstRating": "3"
+              },
+              "datePublished": "2024-04-18",
+              "author": { "@type": "Person", "name": "Raman Gupta" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "M3M Golf Estate"
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "M3M Golf Estate",
+            "url": "https://m3m-golfestate.in/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://m3m-golfestate.in/m3m-golf-estate-master-plan.php{search_term_string}https://m3m-golfestate.in/m3m-golf-estate-location.php",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
     ]
   }
 ]

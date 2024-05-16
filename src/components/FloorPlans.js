@@ -24,8 +24,8 @@ const FloorPlans = () => {
             <span>M3M Golf Estate</span> Floor Plan
           </h2>
         </div>
-        <div className="row mt-3">
-          <div className="col-md-3">
+        <div className="row mt-3 overflow_row">
+          <div className="col-md-3 col-10">
             <div className="floor-plan-box2">
               <div>
                 <div className="floor-title-top"></div>
@@ -46,7 +46,7 @@ const FloorPlans = () => {
           </div>
           {fairWest?.length > 0 &&
             fairWest[0]?.plans?.slice(0, 3).map((plan, i) => (
-              <div className="col-md-3" key={i}>
+              <div className="col-md-3 col-10" key={i}>
                 <div className="floor-plan-box2">
                   <div className="floor-plan-overlay">
                     <div className="image-box">
@@ -72,8 +72,8 @@ const FloorPlans = () => {
               </div>
             ))}
         </div>
-        <div className="row mt-5">
-          <div className="col-md-3">
+        <div className="row mt-5 overflow_row">
+          <div className="col-md-3 col-10">
             <div className="floor-plan-box">
               <div>
                 <div className="floor-title-top"></div>
@@ -94,7 +94,7 @@ const FloorPlans = () => {
           </div>
           {fairEast?.length > 0 &&
             fairEast[0]?.plans?.slice(0, 3).map((plan, i) => (
-              <div className="col-md-3" key={i}>
+              <div className="col-md-3 col-10" key={i}>
                 <div className="floor-plan-box2 floor-plan-box">
                   <div className="floor-plan-overlay">
                     <div className="image-box">
@@ -120,8 +120,8 @@ const FloorPlans = () => {
               </div>
             ))}
         </div>
-        <div className="row mt-5">
-          <div className="col-md-3">
+        <div className="row mt-5 overflow_row">
+          <div className="col-md-3 col-10">
             <div className="floor-plan-box2">
               <div>
                 <div className="floor-title-top"></div>
@@ -142,7 +142,7 @@ const FloorPlans = () => {
           </div>
           {stAndrews?.length > 0 &&
             stAndrews[0]?.plans?.slice(0, 3).map((plan, i) => (
-              <div className="col-md-3" key={i}>
+              <div className="col-md-3 col-10" key={i}>
                 <div className="floor-plan-box2">
                   <div className="floor-plan-overlay">
                     <div className="image-box">
@@ -168,8 +168,8 @@ const FloorPlans = () => {
               </div>
             ))}
         </div>
-        <div className="row mt-5">
-          <div className="col-md-3">
+        <div className="row mt-5 overflow_row">
+          <div className="col-md-3 col-10">
             <div className="floor-plan-box">
               <div>
                 <div className="floor-title-top"></div>
@@ -190,7 +190,7 @@ const FloorPlans = () => {
           </div>
           {poloSuits?.length > 0 &&
             poloSuits[0]?.plans?.slice(0, 3).map((plan, i) => (
-              <div className="col-md-3" key={i}>
+              <div className="col-md-3 col-10" key={i}>
                 <div className="floor-plan-box2 floor-plan-box">
                   <div className="floor-plan-overlay">
                     <div className="image-box">

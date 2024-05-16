@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="container main_container">
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 mob_hide">
           <ImageCarousal />
         </div>
         <div className="col-md-8">
@@ -19,7 +19,7 @@ const About = () => {
             About <span>M3M Golf Estate</span>
           </h2>
           <p className="text-justify">{data[0]?.about}</p>
-          <div className="row">
+          <div className="row mob_hide">
             <div className="col-md-6 d-flex align-items-center mt-4">
               <FaUserTie className="icons" />
               <div className="about_features">

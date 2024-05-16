@@ -2,12 +2,21 @@ import React from "react";
 import Navbar from "./Navbar";
 import useGetData from "../utils/useGetData";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
 
 const Pricing = () => {
   const data = useGetData();
-
+  const currentUrl = window.location.href;
   return (
     <>
+      <Helmet>
+        <title>M3M Golf Estate Price Sector 65 Gurgaon</title>
+        <meta
+          name="description"
+          content="m3m golf estate apartments investment starts from 5 cr. resale options also available.Call for details @ 9999063322"
+        />
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
       <Navbar />
       <section className="inner_banner">
         <div className="overlay">

@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import useGetData from "../utils/useGetData";
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
 
 const AllFloorPlan = () => {
   const data = useGetData();
@@ -23,12 +24,22 @@ const AllFloorPlan = () => {
   const allTowers = Array.from(towersSet);
   return (
     <>
+      <Helmet>
+        <title>
+          M3M Golf Estate
+          {/* {floor_plan?.length > 0 && floor_plan[0]?.category}{" "} */}
+          Floor Plan
+        </title>
+      </Helmet>
       <Navbar />
       <section className="inner_banner">
         <div className="overlay">
           <div className="container">
             <div className="title">
-              <h4>M3M Golf Estate {floor_plan[0]?.category} floor plans</h4>
+              <h4>
+                M3M Golf Estate{" "}
+                {floor_plan?.length > 0 && floor_plan[0]?.category} floor plans
+              </h4>
             </div>
           </div>
         </div>

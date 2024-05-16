@@ -1,12 +1,17 @@
 import React from "react";
 import ImageCarousal from "./ImageCarousal";
 import Navbar from "./Navbar";
-import masterPlan from "../assets/master-plan-m3m-golf-estate.jpg";
 import Footer from "./Footer";
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
+  const currentUrl = window.location.href;
   return (
     <div>
+      <Helmet>
+        <title>About M3M Golf Estate</title>
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
       <>
         <Navbar />
         <section className="inner_banner">
@@ -18,7 +23,7 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-        <div className="container about_real_estate my-5">
+        <div className="container about_real_estate abouties my-5">
           <div className="text-center">
             <h4 className="main_title2 d-inline-block">
               About <span>M3M Golf Estate</span>

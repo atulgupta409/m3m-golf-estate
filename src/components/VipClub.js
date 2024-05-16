@@ -33,7 +33,7 @@ const VipClub = () => {
                   <li className={selectedButton === 1 && "active"}>
                     <Link onClick={() => handleButtonClick(1)}>
                       <div className="d-flex align-items-center">
-                        <div className="vip_icon">
+                        <div className="vip_icon mob_hide">
                           <GiPoolTableCorner className="f30" />
                         </div>
                         <div>
@@ -46,7 +46,7 @@ const VipClub = () => {
                   <li className={selectedButton === 2 && "active"}>
                     <Link onClick={() => handleButtonClick(2)}>
                       <div className="d-flex align-items-center">
-                        <div className="vip_icon">
+                        <div className="vip_icon mob_hide">
                           <TbTheater className="f30" />
                         </div>
                         <div>
@@ -59,7 +59,7 @@ const VipClub = () => {
                   <li className={selectedButton === 3 && "active"}>
                     <Link onClick={() => handleButtonClick(3)}>
                       <div className="d-flex align-items-center">
-                        <div className="vip_icon">
+                        <div className="vip_icon mob_hide">
                           <FaArrowUpFromWaterPump className="f30" />
                         </div>
                         <div>
@@ -72,7 +72,7 @@ const VipClub = () => {
                   <li className={selectedButton === 4 && "active"}>
                     <Link onClick={() => handleButtonClick(4)}>
                       <div className="d-flex align-items-center">
-                        <div className="vip_icon">
+                        <div className="vip_icon mob_hide">
                           <CgGym className="f30" />
                         </div>
                         <div>
@@ -85,7 +85,7 @@ const VipClub = () => {
                   <li className={selectedButton === 5 && "active"}>
                     <Link onClick={() => handleButtonClick(5)}>
                       <div className="d-flex align-items-center">
-                        <div className="vip_icon">
+                        <div className="vip_icon mob_hide">
                           <RiRestaurantLine className="f30" />
                         </div>
                         <div>

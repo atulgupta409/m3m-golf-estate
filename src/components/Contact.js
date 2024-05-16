@@ -1,16 +1,91 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import contactImg from "../assets/m3m-golf-estate-main-contact.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { checkValidation } from "../utils/validate";
 
 const Contact = () => {
+  const [isSending, setIsSending] = useState(false);
+  const notifySuccess = () => toast.success("Success!!");
+  const notifyError = (error) => toast.error(error);
+  const name = useRef(null);
+  const email = useRef(null);
+  const phone = useRef(null);
+  const PageLocation = window.location.href;
+  const dateTimeString = new Date().toLocaleString();
+  const [date, time] = dateTimeString.split(", ");
+
+  const handleSheet = async () => {
+    try {
+      const response = await fetch(
+        "https://v1.nocodeapi.com/dwarkaexpressway/google_sheets/CQjlqWJyvQCdwALG?tabId=Sheet1",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify([
+            [
+              date,
+              time,
+              PageLocation,
+              "",
+              name.current.value,
+              email.current.value,
+              phone.current.value,
+            ],
+          ]),
+        }
+      );
+      name.current.value = "";
+      email.current.value = "";
+      phone.current.value = "";
+      await response.json();
+      notifySuccess();
+    } catch (error) {
+      console.log(error);
+      notifyError();
+    }
+  };
+
+  // const submitFormHandler = async () => {
+  //   const message = checkValidation(
+  //     name.current.value,
+  //     email.current.value,
+  //     phone.current.value
+  //   );
+  //   // setErrorMessage(message);
+  //   if (!message) {
+  //     setIsSending(true);
+  //     try {
+  //       await sendEmail(
+  //         name.current.value,
+  //         email.current.value,
+  //         phone.current.value,
+  //         PageLocation
+  //       );
+  //       handleSheet();
+  //       notifySuccess();
+  //     } catch (error) {
+  //       console.error("Error sending email:", error);
+  //       notifyError(error.message);
+  //     } finally {
+  //       setIsSending(false);
+  //     }
+  //   }
+  // };
+
   return (
     <div className="container main_container">
+      <ToastContainer />
       <div className="text-center">
         <h2 className="main_title d-inline-block">
-          Buy apartment at <span>m3m golf estate</span>
+          Buy apartment at <br className="desk_hide" />
+          <span>m3m golf estate</span>
         </h2>
       </div>
       <div className="row contact_agent_wrapper">
-        <div className="col-md-6">
+        <div className="col-md-6 mob_hide">
           <img src={contactImg} alt="contact" className="img-fluid" />
         </div>
         <div className="col-md-6 agent_info_wrapper">
@@ -27,12 +102,16 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <form className="agent_contact_form">
+          <form
+            className="agent_contact_form"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <div className="form-group">
               <input
                 type="text"
                 placeholder="Name*"
                 className="form-control"
+                ref={name}
                 required
               />
             </div>
@@ -42,6 +121,7 @@ const Contact = () => {
                 placeholder="Email*"
                 className="form-control"
                 required
+                ref={email}
               />
             </div>
             <div className="form-group">
@@ -49,6 +129,7 @@ const Contact = () => {
                 type="mob"
                 placeholder="Mobile*"
                 className="form-control"
+                ref={phone}
                 required
               />
             </div>
@@ -62,7 +143,10 @@ const Contact = () => {
                 <option value="Other/Any">Other/Any</option>
               </select>
             </div>
-            <button className="btn text-white font-weight-bold thm-button btn-block">
+            <button
+              className="btn text-white font-weight-bold thm-button btn-block"
+              onClick={handleSheet}
+            >
               Send
             </button>
           </form>
