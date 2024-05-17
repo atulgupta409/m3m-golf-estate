@@ -1,13 +1,10 @@
 import React from "react";
 import ImageCarousal from "./ImageCarousal";
-import useGetData from "../utils/useGetData";
 import { FaUserTie, FaSolarPanel } from "react-icons/fa";
 import { RiUserLocationFill } from "react-icons/ri";
 import { PiLightbulbFilamentBold } from "react-icons/pi";
 
-const About = () => {
-  const data = useGetData();
-  console.log(data);
+const About = ({ about }) => {
   return (
     <div className="container main_container">
       <div className="row">
@@ -18,7 +15,7 @@ const About = () => {
           <h2 className="main_title">
             About <span>M3M Golf Estate</span>
           </h2>
-          <p className="text-justify">{data[0]?.about}</p>
+          <p className="text-justify">{about}</p>
           <div className="row mob_hide">
             <div className="col-md-6 d-flex align-items-center mt-4">
               <FaUserTie className="icons" />

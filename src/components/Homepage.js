@@ -36,12 +36,16 @@ const Homepage = () => {
         </script>
       </Helmet>
       <Navbar />
-      <MainBanner />
-      <About />
+      <MainBanner
+        name={data[0]?.name}
+        configuration={data[0]?.configuration}
+        starting_price={data[0]?.starting_price}
+      />
+      <About about={data[0]?.about} />
       <FloorPlans />
       <VideoSection />
       <VipClub />
-      <PriceTable />
+      <PriceTable price={data[0]?.price} />
       <Contact />
       <Partners />
       <Location />

@@ -1,7 +1,8 @@
 [
   {
     "name": "M3M Golf Estate",
-    "starting_price": "3000 / sq.ft",
+    "starting_price": "3000 / Sq.ft",
+    "configuration": "3, 4, 5BHK",
     "floor_plans": [
       {
         "category": "Fairway West",

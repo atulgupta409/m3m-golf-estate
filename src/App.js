@@ -10,7 +10,6 @@ const HomePage = lazy(() => import("./components/Homepage"));
 
 function App() {
   const router = createBrowserRouter([
-    // { element: <ScrollToTop /> },
     {
       path: "/",
       element: (

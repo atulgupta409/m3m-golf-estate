@@ -1,8 +1,6 @@
 import React from "react";
-import useGetData from "../utils/useGetData";
 
-const PriceTable = () => {
-  const data = useGetData();
+const PriceTable = ({ price }) => {
   return (
     <section id="pricing" className="price-table">
       <div className="container text-center">
@@ -20,7 +18,7 @@ const PriceTable = () => {
                 </tr>
               </thead>
               <tbody>
-                {data[0]?.price?.map((price) => (
+                {price?.map((price) => (
                   <tr key={price?.id}>
                     <td>{price?.apartment}</td>
                     <td>{price?.Type}</td>
