@@ -3,11 +3,13 @@ import ImageCarousal from "./ImageCarousal";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "./ScrollToTop";
 
 const AboutUs = () => {
   const currentUrl = window.location.href;
   return (
     <div>
+      <ScrollToTop />
       <Helmet>
         <title>About M3M Golf Estate</title>
         <link rel="canonical" href={currentUrl} />

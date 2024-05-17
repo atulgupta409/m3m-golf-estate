@@ -41,6 +41,7 @@ const Contact = () => {
       email.current.value = "";
       phone.current.value = "";
       await response.json();
+      console.log("success");
       notifySuccess();
     } catch (error) {
       console.log(error);

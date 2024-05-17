@@ -4,6 +4,7 @@ import useGetData from "../utils/useGetData";
 import { Link, useParams } from "react-router-dom";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "./ScrollToTop";
 
 const AllFloorPlan = () => {
   const data = useGetData();
@@ -24,6 +25,7 @@ const AllFloorPlan = () => {
   const allTowers = Array.from(towersSet);
   return (
     <>
+      <ScrollToTop />
       <Helmet>
         <title>
           M3M Golf Estate

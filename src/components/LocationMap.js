@@ -5,12 +5,14 @@ import ImageCarousal from "./ImageCarousal";
 import useGetData from "../utils/useGetData";
 import locationMap from "../assets/location-map-m3m-golf-estate.jpg";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "./ScrollToTop";
 
 const LocationMap = () => {
   const data = useGetData();
   const currentUrl = window.location.href;
   return (
     <>
+      <ScrollToTop />
       <Helmet>
         <title>M3M Golf Estate Location | Golf Estate Sector 65 Gurgaon</title>
         <meta

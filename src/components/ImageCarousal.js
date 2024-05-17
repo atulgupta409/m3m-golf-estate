@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IMAGES } from "../utils/constants";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const ImageCarousal = () => {
+  useEffect(() => {
+    // Ensure Bootstrap's carousel is initialized
+    const carouselElement = document.querySelector(
+      "#carouselExampleIndicators"
+    );
+    const bootstrapCarousel = new window.bootstrap.Carousel(carouselElement, {
+      interval: 2000,
+      ride: "carousel",
+    });
+  }, []);
   return (
-    <div id="carouselExampleIndicators" className="carousel slide">
+    <div
+      id="carouselExampleIndicators"
+      className="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="2000"
+    >
       <div className="carousel-indicators">
         {IMAGES.map((image, index) => (
           <button

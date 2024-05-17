@@ -4,11 +4,13 @@ import Navbar from "./Navbar";
 import masterPlan from "../assets/master-plan-m3m-golf-estate.jpg";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "./ScrollToTop";
 
 const MasterPlan = () => {
   const currentUrl = window.location.href;
   return (
     <>
+      <ScrollToTop />
       <Helmet>
         <title>M3M Golf Estate Master Plan Sector 65 Gurgaon</title>
         <meta

@@ -12,6 +12,7 @@ import Location from "./Location";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
 import useGetData from "../utils/useGetData";
+import ScrollToTop from "./ScrollToTop";
 
 const Homepage = () => {
   const data = useGetData();
@@ -20,6 +21,7 @@ const Homepage = () => {
   const currentUrl = window.location.href;
   return (
     <div>
+      <ScrollToTop />
       <Helmet>
         <title>{seoData?.title}</title>
         <meta name="description" content={seoData?.description} />

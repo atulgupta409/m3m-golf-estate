@@ -10,8 +10,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .navbar {
-  top: 0;
+  top: 44px;
   z-index: 999999;
+}
+a {
+  text-decoration: none !important;
+}
+// .nav_wrapper {
+//   position: fixed;
+//   width: 100%;
+//   top: 0;
+//   z-index: 99999;
+// }
+.call_nav_fixed {
+  background-image: linear-gradient(to right, #846cad, #56bcea);
+  width: 100%;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  padding: 6px;
+  z-index: 999999;
+  a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+  }
 }
 .nav-item {
   margin-left: 37px;
@@ -267,7 +290,7 @@ code {
 .contact_agent_wrapper {
   div img {
     border-radius: 14px;
-    height: 450px;
+    height: 464px;
     object-fit: cover;
   }
   .name {
@@ -613,7 +636,7 @@ a {
     font-size: 14px;
   }
   .overflow_row {
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
     overflow-x: scroll;
   }
   .overflow_row::-webkit-scrollbar {
@@ -630,6 +653,9 @@ a {
     line-height: 27px;
     font-size: 21px;
     padding: 34px 0px;
+  }
+  .navbar {
+    top: 36px;
   }
   .property_details_tab.property_details_tab2 {
     .overlay {
@@ -651,6 +677,11 @@ a {
         }
       }
     }
+  }
+  .call_nav_fixed a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
   }
   .main_banner {
     height: 387px;
@@ -785,7 +816,8 @@ a {
       text-align: justify;
     }
   }
-  .mast img {
+  .mast img,
+  .map_loc img {
     width: 100%;
   }
   .abouties .col-md-8 {

@@ -72,34 +72,34 @@ const Footer = () => {
                 </div>
                 <ul>
                   <li>
-                    <a href="/fairway-west-floor-plan.php">
+                    <Link to="/">
                       <i class="fa fa-angle-right"></i>
                       M3M Latitude
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/fairway-east-floor-plan.php">
+                    <Link to="/">
                       <i class="fa fa-angle-right"></i>
                       M3M Merlin
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/st-andrews-floor-plan.php">
+                    <Link to="/">
                       <i class="fa fa-angle-right"></i>
                       M3M Woodshire
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/polo-suits-floor-plan.php">
+                    <Link to="/">
                       <i class="fa fa-angle-right"></i>
                       M3M 65th Avenue
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/pricing.php">
+                    <Link to="/">
                       <i class="fa fa-angle-right"></i>
                       M3M Corner Walk
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

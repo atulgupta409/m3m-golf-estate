@@ -3,12 +3,14 @@ import Navbar from "./Navbar";
 import useGetData from "../utils/useGetData";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet-async";
+import ScrollToTop from "./ScrollToTop";
 
 const Pricing = () => {
   const data = useGetData();
   const currentUrl = window.location.href;
   return (
     <>
+      <ScrollToTop />
       <Helmet>
         <title>M3M Golf Estate Price Sector 65 Gurgaon</title>
         <meta
