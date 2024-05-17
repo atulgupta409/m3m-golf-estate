@@ -5,47 +5,76 @@ import "react-toastify/dist/ReactToastify.css";
 import { checkValidation } from "../utils/validate";
 
 const Contact = () => {
-  const [isSending, setIsSending] = useState(false);
-  const notifySuccess = () => toast.success("Success!!");
-  const notifyError = (error) => toast.error(error);
+  const [errorMessage, setErrorMessage] = useState(false);
   const name = useRef(null);
   const email = useRef(null);
   const phone = useRef(null);
   const PageLocation = window.location.href;
   const dateTimeString = new Date().toLocaleString();
   const [date, time] = dateTimeString.split(", ");
+  const notifySuccess = () =>
+    toast.success("Thank You for submitting the query!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
+  const notifyError = () =>
+    toast.error("Error Ocurred!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
 
   const handleSheet = async () => {
-    try {
-      const response = await fetch(
-        "https://v1.nocodeapi.com/dwarkaexpressway/google_sheets/CQjlqWJyvQCdwALG?tabId=Sheet1",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify([
-            [
-              date,
-              time,
-              PageLocation,
-              "",
-              name.current.value,
-              email.current.value,
-              phone.current.value,
-            ],
-          ]),
-        }
-      );
-      name.current.value = "";
-      email.current.value = "";
-      phone.current.value = "";
-      await response.json();
-      console.log("success");
-      notifySuccess();
-    } catch (error) {
-      console.log(error);
-      notifyError();
+    const message = checkValidation(
+      name.current.value,
+      email.current.value,
+      phone.current.value
+    );
+    setErrorMessage(message);
+    if (!message) {
+      try {
+        const response = await fetch(
+          "https://v1.nocodeapi.com/dwarkaexpressway/google_sheets/CQjlqWJyvQCdwALG?tabId=Sheet1",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify([
+              [
+                date,
+                time,
+                PageLocation,
+                "",
+                name.current.value,
+                email.current.value,
+                phone.current.value,
+              ],
+            ]),
+          }
+        );
+        name.current.value = "";
+        email.current.value = "";
+        phone.current.value = "";
+        await response.json();
+        console.log("success");
+        notifySuccess();
+      } catch (error) {
+        console.log(error);
+        notifyError();
+      }
     }
   };
 

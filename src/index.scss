@@ -619,6 +619,13 @@ a {
 .desk_hide {
   display: none;
 }
+.navbar-brand img {
+  width: 150px;
+}
+.about_estate > a > img {
+  width: 150px;
+  background-color: #fff;
+}
 
 @media only screen and (max-width: 600px) {
   .mob_hide {
